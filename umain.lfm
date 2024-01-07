@@ -1,0 +1,62 @@
+object fMain: TfMain
+  Left = 318
+  Height = 139
+  Top = 141
+  Width = 339
+  BorderStyle = bsToolWindow
+  Caption = 'Stopwatch'
+  ClientHeight = 139
+  ClientWidth = 339
+  FormStyle = fsSystemStayOnTop
+  OnCreate = FormCreate
+  Position = poScreenCenter
+  SnapOptions.SnapToMonitor = True
+  LCLVersion = '3.0.0.1'
+  object laDisplay: TLabel
+    Left = 8
+    Height = 65
+    Top = 8
+    Width = 320
+    Caption = '00:00:00'
+    Font.CharSet = ANSI_CHARSET
+    Font.Height = -67
+    Font.Name = 'Courier'
+    Font.Pitch = fpFixed
+    Font.Quality = fqDraft
+    ParentFont = False
+  end
+  object buStart: TSpeedButton
+    Left = 8
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Start'
+    Flat = True
+    OnClick = buStartClick
+  end
+  object buPause: TSpeedButton
+    Left = 128
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Pause'
+    Flat = True
+    OnClick = buPauseClick
+  end
+  object buStop: TSpeedButton
+    Left = 253
+    Height = 25
+    Top = 104
+    Width = 75
+    Caption = 'Stop'
+    Flat = True
+    OnClick = buStopClick
+  end
+  object Timer1: TTimer
+    Enabled = False
+    Interval = 100
+    OnTimer = Timer1Timer
+    Left = 216
+    Top = 88
+  end
+end
