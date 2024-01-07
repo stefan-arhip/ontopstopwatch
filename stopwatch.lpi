@@ -56,9 +56,15 @@
     </SearchPaths>
     <Linking>
       <Debugging>
+<<<<<<< HEAD
         <DebugInfoType Value="dsDwarf3"/>
         <StripSymbols Value="True"/>
         <UseExternalDbgSyms Value="True"/>
+=======
+        <GenerateDebugInfo Value="False"/>
+        <DebugInfoType Value="dsDwarf3"/>
+        <StripSymbols Value="True"/>
+>>>>>>> cb460bc572dcdb9a26f09a81903e847a35e64d81
       </Debugging>
       <Options>
         <Win32>
